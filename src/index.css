@@ -21,6 +21,7 @@ form {
   border-radius: 10px;
 
   display: flex;
+  margin-bottom: 30px;
 }
 
 .quistion {
@@ -41,4 +42,18 @@ form {
   background-color: rgb(170, 93, 241);
   border: 1px solid purple;
   color: white;
+}
+
+.form {
+  background-color: white;
+  border-left: 3px solid purple;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
 }
