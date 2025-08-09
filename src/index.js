@@ -19,6 +19,7 @@ function handleAL(event) {
 
   let pomeeElement = document.querySelector("#pomee");
   pomeeElement.style.display = "block";
+  pomeeElement.innerHTML = `⌛generting pome about ${addPome.value}`;
 
   axios.get(apiUrl).then(displyPome);
 }
