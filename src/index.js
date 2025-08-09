@@ -14,8 +14,11 @@ function handleAL(event) {
   let apiKey = "19abto433b3602a6dd0fc334c03ec3cf";
   let context = `instraction: generat a persian pome abut ${addPome.value}`;
   let prompt =
-    " yo are a person who love to write persian pome jut make shur to folow the instraction and write only 2 4 line pome and seperat each line with <br>";
+    " yo are a person who love to write persian pome jut make shur to folow the instraction and write only 2 4 line pome and seperat each line with <br> and at the end of the pome write Gawhar with strong fount";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let pomeeElement = document.querySelector("#pomee");
+  pomeeElement.style.display = "block";
 
   axios.get(apiUrl).then(displyPome);
 }
